@@ -23,3 +23,6 @@ fleet-footer-extension>footer[slot=navigation] p{grid-column:1/-1;order:initial;
 fleet-footer-extension>footer[slot=navigation]>a:not(.footer-brand){margin:0;font-size:15px;font-weight:500;line-height:1.45;min-height:44px;text-decoration:none}
 fleet-footer-extension>footer[slot=navigation] a:focus-visible{outline:2px solid var(--green);outline-offset:4px}
 @media(max-width:340px){fleet-footer-extension>footer[slot=navigation]{grid-template-columns:minmax(0,1fr)}}
+
+/* Keep the final studio line reachable above the native active shortlist. */
+body:has(#compare-bar:not([hidden])){padding-bottom:calc(8rem + env(safe-area-inset-bottom,0px))}
